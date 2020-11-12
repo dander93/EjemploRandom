@@ -1,0 +1,73 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #878787;
+}
+
+.formClass {
+    display: block;
+    width: 55rem;
+    height: 35rem;
+    display: block;
+    margin: 0 auto;
+}
+
+.fieldClass {
+    border: 1px dashed #ffcc33;
+    border-radius: 10px;
+}
+
+.lgndClass {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.lblClass {
+    display: block;
+}
+
+.inputClass {
+    width: 250px;
+    height: 30px;
+    color: blue;
+    border-radius: 5px;
+    border: 1px solid #888;
+}
+
+.inputClass:focus {
+    outline: 0;
+    border: 1px solid #111;
+}
+
+.placeHolder-margin::placeholder {
+    color: deeppink;
+    margin-left: 3rem;
+}
+
+.placeHolder-padding::placeholder {
+    color: orange;
+    padding-left: 3rem;
+}
+
+.placeHolderIE-margin:-ms-input-placeholder {
+    color: deeppink;
+    margin-left: 3rem;
+}
+
+.placeHolderIE-padding:-ms-input-placeholder {
+    color: orange;
+    padding-left: 3rem;
+}
+
+.placeHolderIEChrome::placeholder{
+    color: darkgreen;
+    padding-left: 3rem;
+}
+
+/* esto solo se agrega para IE , pero se podría utilizar solo el .placeHolderIEChrome:-ms-input-placeholder 
+sin la media query para tener el mismo resultado*/
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .placeHolderIEChrome:-ms-input-placeholder {
+        color: darkgreen;
+        padding-left: 3rem;
+    }
+ }
